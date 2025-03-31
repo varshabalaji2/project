@@ -1,0 +1,150 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Google Workspace Pricing</title>
+  <link rel="stylesheet" href="pricing.css">
+  <style>
+    @font-face {
+font-family: customfont;
+src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+     body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #ffffff;
+      color: rgb(21, 19, 19);
+      text-align: justify;
+      padding: 1rem 0;
+    }
+    .pricing-table {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem;
+    }
+    .plan {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 1rem;
+      padding: 1.5rem;
+      width: 280px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .plan:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .plan h2 {
+      color: #0b0a0a;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #0e0d0d;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    button {
+      background-color: #98fbcb;
+      color: rgb(15, 12, 12);
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #98fbcb;
+      transform: scale(1.05);
+    }   
+    .adya{
+     text-align: center;
+    } 
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topnav">
+        <div class="dropdown">
+            <a href="#" >Products</a>
+            <div class="dropdown-content">
+                <a href="#">Product 1</a>
+                <a href="#">Product 2</a>
+                <a href="#">Product 3</a>
+            </div>
+        </div>
+        <a href="homepage.html">Home</a>      
+        <a href="#">Teams</a>
+        <a href="#">Individuals</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="help.html">Help</a>
+        <a href="register.html" class="right">Register</a>
+        <a href="login.html" class="right">Login</a>
+    </div>
+    <div class="adya"><h1>Motion Plans</h1></div>
+  </header>
+  <main>
+    <section class="pricing-table">
+      <div class="plan">
+        <h2>Business Starter</h2>
+        <p class="price">$7 USD/user/month</p>
+        <ul>
+          <li>30 GB pooled storage per user</li>
+          <li>Secure custom business email</li>
+          <li>100 participant video meetings</li>
+          <li>Standard Support</li>
+        </ul>
+        <button>Select Plan</button>
+      </div>
+      <div class="plan">
+        <h2>Business Standard</h2>
+        <p class="price">$14 USD/user/month</p>
+        <ul>
+          <li>2 TB pooled storage per user</li>
+          <li>Secure custom business email</li>
+          <li>150 participant video meetings</li>
+          <li>eSignature with Docs and PDFs</li>
+          <li>Standard Support</li>
+        </ul>
+        <button>Select Plan</button>
+      </div>
+      <div class="plan">
+        <h2>Business Plus</h2>
+        <p class="price">$22 USD/user/month</p>
+        <ul>
+          <li>5 TB pooled storage per user</li>
+          <li>Secure custom business email with eDiscovery and retention</li>
+          <li>500 participant video meetings</li>
+          <li>Enhanced Support</li>
+        </ul>
+        <button>Select Plan</button>
+      </div>
+      <div class="plan">
+        <h2>Enterprise</h2>
+        <p class="price">Contact sales for pricing</p>
+        <ul>
+          <li>5 TB pooled storage per user</li>
+          <li>Advanced security and management controls</li>
+          <li>1000 participant video meetings</li>
+          <li>Enhanced Support</li>
+        </ul>
+        <button>Contact Sales</button>
+      </div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

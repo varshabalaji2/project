@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="icon" type="image/png" href="icons/stopwatch.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="main-wrapper">  
+        <div class="container">
+            <div class="left-content">
+                Join the Future.<br> <span style="font-size: 20px; font-weight: normal;">Create Your Account Today.</span>
+            </div>
+            <div class="divider"></div>
+            <div class="registercontainer">
+                <div class="register">
+                    <h1>Register</h1>
+                    <form action="register" method="POST">
+                        <p>First Name</p>
+                        <input type="text" name="firstname" placeholder="Enter your first name" required>
+                        <p><br>Last Name</p>
+                        <input type="text" name="lastname" placeholder="Enter your last name" required>
+                        <p><br>Password</p>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                        <p><br>Confirm Password</p>
+                        <input type="password" name="confirmpassword" placeholder="Confirm your password" required>
+                        <br><br>
+                        <button type="submit" class="registerbutton">Register</button>
+                    </form>
+                    <p class="existing-user">Already have an account? <a href="login.html">Login here</a></p>
+                    <p class="existing-user">Go back to <a href="homepage.html">Home</a></p>
+
+                </div>
+            </div>        
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

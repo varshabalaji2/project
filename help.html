@@ -1,0 +1,125 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Help Center</title>
+    <style>
+        @font-face {
+font-family: customfont;
+src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+        body {
+            font-family: customfont;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        header {
+      background-color: #ffffff;
+      color: rgb(21, 19, 19);
+      text-align: justify;
+      padding: 1rem 0;
+    }
+        .contact-section, .support-section, .faq-section {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact-section:hover, .support-section:hover, .faq-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .contact-box, .support-box, .faq-box {
+            text-align: left;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #98fbcb;
+            color: rgb(7, 7, 7);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #98fbcb;
+            transform: scale(1.05);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <div class="dropdown">
+                <a href="#" >Products</a>
+                <div class="dropdown-content">
+                    <a href="#">Product 1</a>
+                    <a href="#">Product 2</a>
+                    <a href="#">Product 3</a>
+                </div>
+            </div>
+            <a href="homepage.html">Home</a>      
+            <a href="#">Teams</a>
+            <a href="#">Individuals</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="help.html">Help</a>
+            <a href="register.html" class="right">Register</a>
+            <a href="login.html" class="right">Login</a>
+        </div>
+      </header>
+    <section class="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> support@example.com</p>
+            <p><strong>Contact Number:</strong> +123 456 7890</p>
+        </div>
+    </section>
+    <section class="support-section">
+        <div class="support-box">
+            <h2>Submit a Support Request</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="issue">Describe your issue:</label>
+                <textarea id="issue" name="issue"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="faq-box">
+            <h2>Frequently Asked Questions</h2>
+            <button>How do I reset my password?</button>
+            <button>How do I contact support?</button>
+            <button>How can I upgrade my plan?</button>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
